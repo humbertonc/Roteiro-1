@@ -1,0 +1,30 @@
+#include <iostream>
+#include "Data.h"
+
+using namespace std;
+
+int main()
+{
+    Data d1 = Data(30, 11, 2019);
+    Data d2 = Data(28,2,2019);
+    Data d3 = Data(31,12,2019);
+    Data d4 = Data(3,5,2019);
+
+    cout << d1.getDia() <<"/"<< d1.getMes() << endl;
+    d1.AvancarDia();
+    cout << d1.getDia() <<"/"<< d1.getMes() << "\n" <<endl;
+
+    cout << d2.getDia() <<"/"<< d2.getMes() << endl;
+    d2.AvancarDia();
+    cout << d2.getDia() <<"/"<< d2.getMes() << "\n" <<endl;
+
+    cout << d3.getDia() <<"/"<< d3.getMes() << "/" << d3.getAno() << endl;
+    d3.AvancarDia();
+    cout << d3.getDia() <<"/"<< d3.getMes() << "/" << d3.getAno() << "\n"<< endl;
+
+    cout << d4.getDia() <<"/"<< d4.getMes() << endl;
+    d4.AvancarDia();
+    cout << d4.getDia() <<"/"<< d4.getMes() << endl;
+
+    return 0;
+}
