@@ -1,0 +1,22 @@
+#include <iostream>
+#include <string>
+#include "Empregado.h"
+
+using namespace std;
+
+int main()
+{
+    Empregado emp1 = Empregado(7250, "Joao", "Fernandes");
+    Empregado emp2 = Empregado(10700, "Lais", "Azevedo");
+
+    cout << "O salario anual de " << emp1.getNome() <<" "<<emp1.getSobre() << " vale " << 12*emp1.getSalario() <<endl;
+    cout << "O salario anual de " << emp2.getNome() <<" "<<emp2.getSobre() << " vale " << 12*emp2.getSalario() <<endl;
+
+    emp1.setSalario(emp1.getSalario()*1.1);
+    emp2.setSalario(emp2.getSalario()*1.1);
+
+    cout << "O novo salario anual de " << emp1.getNome() <<" "<<emp1.getSobre() << " vale " << 12*emp1.getSalario() <<endl;
+    cout << "O novo salario anual de " << emp2.getNome() <<" "<<emp2.getSobre() << " vale " << 12*emp2.getSalario() <<endl;
+
+    return 0;
+}
