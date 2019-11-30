@@ -23,7 +23,7 @@ class Empregado
 
     private:
         string nome, sobrenome;
-        int salarioM;
+        double salarioM;
 };
 
 #endif // EMPREGADO_H
