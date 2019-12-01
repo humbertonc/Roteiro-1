@@ -1,0 +1,32 @@
+#include <iostream>
+#include <string>
+#include "Despesa.h"
+#include "ControleDeGastos.h"
+
+using namespace std;
+
+int main()
+{
+    ControleDeGastos controle = ControleDeGastos();
+
+    Despesa d1 = Despesa();
+    Despesa d2 = Despesa();
+    Despesa d3 = Despesa();
+
+    d1.setValor(5);
+    d1.setTipoDeGasto("Estacionamento");
+
+    d2.setValor(23);
+    d2.setTipoDeGasto("Pizza");
+
+    d3.setValor(60);
+    d3.setTipoDeGasto("Livro novo");
+
+    controle.setDespesa(d1, 0);
+    controle.setDespesa(d2, 1);
+    controle.setDespesa(d3, 2);
+
+    cout<<controle.calculaTotalDeDespesas()<<endl;
+
+    return 0;
+}
