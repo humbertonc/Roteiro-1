@@ -16,9 +16,10 @@ Despesa ControleDeGastos::getDespesa(int pos)
     return despesas[pos];
 }
 
-int ControleDeGastos::calculaTotalDeDespesas()
+double ControleDeGastos::calculaTotalDeDespesas()
 {
-    int i, soma = 0;
+    int i;
+    double soma = 0;
 
     for(i = 0; i < 100; i++){
         if(despesas[i].getTipoDeGasto()[0] == '\0')
