@@ -9,7 +9,7 @@ class ControleDeGastos
 
         ControleDeGastos();
         virtual ~ControleDeGastos();
-        int calculaTotalDeDespesas();
+        double calculaTotalDeDespesas();
         bool existeDespesaDoTipo(string tipo);
         void setDespesa(Despesa d, int pos);
         Despesa getDespesa(int pos);
